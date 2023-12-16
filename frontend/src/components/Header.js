@@ -61,9 +61,9 @@ const Header = ({ history }) => {
                 </Link>
               )}
               {userInfo && userInfo.isAdmin && (
-                <NavDropdown title="Admin" id="adminmenu">
-                  <Link class="text-decoration-none" to="/admin/userlist">
-                    <NavDropdown.Item class="ml-3" href="/admin/userList">
+                <NavDropdown title="Admin" id="adminmenu" className="adminmenu-dropdown">
+                  <Link className="text-decoration-none adminmenu-dropdown" to="/admin/userlist">
+                    <NavDropdown.Item className="" href="/admin/userList">
                       Users
                     </NavDropdown.Item>
                   </Link>
